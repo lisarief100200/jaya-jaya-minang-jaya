@@ -25,7 +25,7 @@ func NewAdminController(gPublic, gAdmin *gin.RouterGroup, au domain.AdminUsecase
 
 	gAdmin.GET("/item", handler.GetItems)
 	gAdmin.POST("/item", handler.CreateItem)
-	gAdmin.PATCH("/item", handler.UpdateItem)
+	gAdmin.PUT("/item", handler.UpdateItem)
 	gAdmin.DELETE("/item", handler.DeleteItem)
 }
 
