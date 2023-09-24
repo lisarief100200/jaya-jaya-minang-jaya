@@ -61,3 +61,6 @@
 {"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"01a10631-d663-40e8-80ab-2bec526941c2","time":"24-09-2023 16:05:36","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
 {"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v01a10631-d663-40e8-80ab-2bec526941c2","time":"24-09-2023 16:05:36"}
 {"latency":"20.5078ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"01a10631-d663-40e8-80ab-2bec526941c2","responseBody":"{\"respCode\":\"000\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU2MzI3MzYsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.dZbR4E6mOZkYitC-VbiG2KwdpLFCsCm2jUNu91RFYUQ\",\"roleCode\":\"admin\"}}","time":"24-09-2023 16:05:36","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Setip Logger Finish","time":"24-09-2023 16:07:00"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"24-09-2023 16:07:00"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"24-09-2023 16:07:00"}
