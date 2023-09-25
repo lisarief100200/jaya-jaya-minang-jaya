@@ -6,9 +6,13 @@ import (
 	"backend/pkg/v1/mysql"
 	"backend/utils/config"
 
-	adminDelivv1 "backend/api/admin/v1/delivery"
-	adminRepov1 "backend/api/admin/v1/repositories"
-	adminUsecasev1 "backend/api/admin/v1/usecase"
+	authDelivv1 "backend/api/admin/v1/auth/delivery"
+	authRepov1 "backend/api/admin/v1/auth/repositories"
+	authUsecasev1 "backend/api/admin/v1/auth/usecase"
+
+	itemDelivv1 "backend/api/admin/v1/item/delivery"
+	itemRepov1 "backend/api/admin/v1/item/repositories"
+	itemUsecasev1 "backend/api/admin/v1/item/usecase"
 
 	healthcheck "github.com/RaMin0/gin-health-check"
 
@@ -52,11 +56,14 @@ func InitRouteV1_0_0(router *gin.Engine) {
 	v1Admin.Use(controllers.MiddlewareFuncOverrideAdmin())
 
 	// repositories
-	ir := adminRepov1.NewTestRepoAdmin(db)
+	ar := authRepov1.NewTestRepoAuth(db)
+	ir := itemRepov1.NewTestRepoItem(db)
 
 	// usecase
-	iu := adminUsecasev1.NewAdminUsecase(ir)
+	au := authUsecasev1.NewAuthUsecase(ar)
+	iu := itemUsecasev1.NewItemUsecase(ir)
 
 	// handler
-	adminDelivv1.NewAdminController(v1Public, v1Admin, iu)
+	authDelivv1.NewAuthController(v1Public, v1Admin, au)
+	itemDelivv1.NewItemController(v1Admin, iu)
 }

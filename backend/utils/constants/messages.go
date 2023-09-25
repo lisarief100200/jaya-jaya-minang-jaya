@@ -42,7 +42,7 @@ const (
 */
 
 const (
-	SuccessCode = "000"
+	SuccessCode = "200"
 
 	InvalidSessionCode = "100"
 
