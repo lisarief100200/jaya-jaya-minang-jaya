@@ -1,4 +1,4 @@
-module api-lisa
+module backend
 
 go 1.17
 

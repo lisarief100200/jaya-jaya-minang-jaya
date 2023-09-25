@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"api-lisa/utils/log"
+	"backend/utils/log"
 
 	"github.com/gin-contrib/requestid"
 	"github.com/gin-gonic/gin"

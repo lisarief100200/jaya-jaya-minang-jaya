@@ -1,7 +1,7 @@
 package config
 
 import (
-	log2 "api-lisa/utils/log"
+	log2 "backend/utils/log"
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"

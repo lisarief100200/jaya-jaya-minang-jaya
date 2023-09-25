@@ -1,8 +1,8 @@
 package mysql
 
 import (
-	"api-lisa/utils/config"
-	"api-lisa/utils/log"
+	"backend/utils/config"
+	"backend/utils/log"
 	"database/sql"
 	"time"
 

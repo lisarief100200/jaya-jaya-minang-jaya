@@ -1,9 +1,9 @@
 package usecase
 
 import (
-	"api-lisa/domain"
-	"api-lisa/models"
-	"api-lisa/utils/helpers"
+	"backend/domain"
+	"backend/models"
+	"backend/utils/helpers"
 	"io"
 	"log"
 	"os"
