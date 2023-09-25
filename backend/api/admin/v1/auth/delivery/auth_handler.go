@@ -6,6 +6,7 @@ import (
 	"backend/models"
 	"backend/utils/constants"
 	"backend/utils/log"
+	"backend/utils/strings"
 	"net/http"
 	"strconv"
 
@@ -57,6 +58,12 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 
 	err = r.AUsecase.GetPassword(c, uid, req)
 	if err != nil {
+		if strings.IsContains(err.Error(), "password") {
+			log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+			resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid password", Response: nil}
+			c.JSON(http.StatusOK, resp)
+			return
+		}
 		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
 		c.JSON(http.StatusOK, resp)

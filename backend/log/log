@@ -209,3 +209,78 @@
 {"latency":"9.8541ms","level":"info","logType":"Response","method":"PUT","msg":"","requestId":"8225f261-cc12-4f58-bfe7-0df275c66ec9","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"25-09-2023 11:38:06","url":"/v1.0/admin/item","userAgent":"PostmanRuntime/7.33.0"}
 {"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 11:38:55"}
 {"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 11:38:55"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 11:44:30"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 11:44:30"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 11:44:30"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 11:44:37"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 11:44:37"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 13:35:39"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 13:35:39"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 13:35:39"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:18:07"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:18:07"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 14:19:30"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 14:19:30"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 14:19:30"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"20497464-4a31-4b18-8684-973126735b63","time":"25-09-2023 14:19:43","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v20497464-4a31-4b18-8684-973126735b63","time":"25-09-2023 14:19:43"}
+{"latency":"14.0039ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"20497464-4a31-4b18-8684-973126735b63","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI3ODMsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.832q1w-BsDCMFvAAOIYWhy9iLRDEnMH7GnARPM9T3Ck\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:19:43","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"e092ddce-dd6b-4421-8ef2-0499f78e20a5","time":"25-09-2023 14:19:44","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %ve092ddce-dd6b-4421-8ef2-0499f78e20a5","time":"25-09-2023 14:19:44"}
+{"latency":"17.4223ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"e092ddce-dd6b-4421-8ef2-0499f78e20a5","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI3ODQsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.tbGeX2o9Tf4uoMLBmijYO82ApW4sDODEUYzqFHCKeXw\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:19:44","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"b9108238-809c-4483-a73c-7babc687575e","time":"25-09-2023 14:19:46","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %vb9108238-809c-4483-a73c-7babc687575e","time":"25-09-2023 14:19:46"}
+{"latency":"20.6372ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"b9108238-809c-4483-a73c-7babc687575e","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI3ODYsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.LYW7f_5VUrQcEhmEVkYQcPJuN_1tOReykBZpbFJYCBo\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:19:46","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"09f1a8be-5963-4321-911f-ecfe36a026de","time":"25-09-2023 14:19:47","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v09f1a8be-5963-4321-911f-ecfe36a026de","time":"25-09-2023 14:19:47"}
+{"latency":"24.7437ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"09f1a8be-5963-4321-911f-ecfe36a026de","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI3ODcsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.tG4l-0qkSm6iJBjZ95UelgX6mztUATWVMh82hZcwFcI\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:19:47","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:20:09"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:20:09"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 14:20:15"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 14:20:15"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 14:20:15"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"dc34d489-49ce-4637-ba99-76ae97724886","time":"25-09-2023 14:20:23","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %vdc34d489-49ce-4637-ba99-76ae97724886","time":"25-09-2023 14:20:23"}
+{"latency":"19.1641ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"dc34d489-49ce-4637-ba99-76ae97724886","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI4MjMsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.TyY2NIPlYeppSceHCHJ7ewOFKUTYbQ9SeFR7rKPt__s\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:20:23","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"b0ec2a1e-1b74-4f92-9534-44c74570c786","time":"25-09-2023 14:20:31","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %vb0ec2a1e-1b74-4f92-9534-44c74570c786","time":"25-09-2023 14:20:31"}
+{"latency":"23.6706ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"b0ec2a1e-1b74-4f92-9534-44c74570c786","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI4MzEsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.YpcchHvMo60f8s5MvBMePx8aV0kPpF_A5O1OvOzQEfQ\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:20:31","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:21:14"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:21:14"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 14:21:20"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 14:21:20"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 14:21:20"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"cf51ffea-ca52-44f8-be20-aa5659931711","time":"25-09-2023 14:21:47","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %vcf51ffea-ca52-44f8-be20-aa5659931711","time":"25-09-2023 14:21:47"}
+{"latency":"18.562ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"cf51ffea-ca52-44f8-be20-aa5659931711","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI5MDcsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.dvBwHh-gKWkWBwmC5pOQoFExu19k2G8aZeg0PYjzR68\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:21:47","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"0d4bf84b-e571-48d4-9e5f-fe7b261812bf","time":"25-09-2023 14:22:37","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v0d4bf84b-e571-48d4-9e5f-fe7b261812bf","time":"25-09-2023 14:22:37"}
+{"latency":"18.6012ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"0d4bf84b-e571-48d4-9e5f-fe7b261812bf","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI5NTcsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.BnfS5Vc2mvlxKdhEuyovSvGWxtassOcNQAJIlkChRAI\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:22:37","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"1e05dc72-e839-4001-8d28-d43809cee0d1","time":"25-09-2023 14:22:42","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v1e05dc72-e839-4001-8d28-d43809cee0d1","time":"25-09-2023 14:22:42"}
+{"latency":"24.8841ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"1e05dc72-e839-4001-8d28-d43809cee0d1","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI5NjIsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.z3lrU_RfN5cqNNfG81a4BjMKiYeux9E59M-pYX0svf0\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:22:42","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:23:05"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:23:05"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 14:23:10"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 14:23:10"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 14:23:10"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"6c7e644f-1f38-4f3a-a9f5-d575cf7fd1d9","time":"25-09-2023 14:23:14","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin]SUCCESS for requestid: %v6c7e644f-1f38-4f3a-a9f5-d575cf7fd1d9","time":"25-09-2023 14:23:14"}
+{"latency":"9.2536ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"6c7e644f-1f38-4f3a-a9f5-d575cf7fd1d9","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTU3MTI5OTQsInVpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIn0.sYpy0ls_FLJfVh4NYKGkV_fBLPU7LWEjyGvqE-s7fJI\",\"roleCode\":\"admin\"}}","time":"25-09-2023 14:23:14","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:27:18"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:27:18"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 14:27:23"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 14:27:23"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 14:27:23"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"95f7d152-53a0-4be3-9df5-dadcd4992a52","time":"25-09-2023 14:27:28","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin] ERROR password for requestId: 95f7d152-53a0-4be3-9df5-dadcd4992a52","time":"25-09-2023 14:27:28"}
+{"latency":"6.5093ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"95f7d152-53a0-4be3-9df5-dadcd4992a52","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Invalid password\",\"idMessage\":\"\",\"response\":null}","time":"25-09-2023 14:27:28","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin1\"}","requestId":"419b4672-b3a4-4a57-b5ef-866a4eb14192","time":"25-09-2023 14:27:29","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[ADMIN][LoginAdmin] ERROR password for requestId: 419b4672-b3a4-4a57-b5ef-866a4eb14192","time":"25-09-2023 14:27:29"}
+{"latency":"6.4657ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"419b4672-b3a4-4a57-b5ef-866a4eb14192","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Invalid password\",\"idMessage\":\"\",\"response\":null}","time":"25-09-2023 14:27:29","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin1\",    \"password\" : \"admin1\"}","requestId":"020e9fc7-cc17-41d7-a654-1777bc8e786f","time":"25-09-2023 14:27:37","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error scanning query CheckIdAdmin","time":"25-09-2023 14:27:37"}
+{"level":"error","msg":"[ADMIN][LoginAdmin] ERROR sql: no rows in result set for requestId: 020e9fc7-cc17-41d7-a654-1777bc8e786f","time":"25-09-2023 14:27:37"}
+{"latency":"2.3355ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"020e9fc7-cc17-41d7-a654-1777bc8e786f","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Invalid username or passowrd\",\"idMessage\":\"\",\"response\":null}","time":"25-09-2023 14:27:37","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 14:27:46"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 14:27:46"}
