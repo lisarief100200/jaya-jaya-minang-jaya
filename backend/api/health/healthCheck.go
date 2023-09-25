@@ -1,8 +1,8 @@
 package health
 
 import (
-	"api-lisa/models"
-	"api-lisa/utils/constants"
+	"backend/models"
+	"backend/utils/constants"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

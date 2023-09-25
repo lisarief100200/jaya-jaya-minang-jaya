@@ -1,11 +1,11 @@
 package delivery
 
 import (
-	"api-lisa/controllers"
-	"api-lisa/domain"
-	"api-lisa/models"
-	"api-lisa/utils/constants"
-	"api-lisa/utils/log"
+	"backend/controllers"
+	"backend/domain"
+	"backend/models"
+	"backend/utils/constants"
+	"backend/utils/log"
 	"net/http"
 	"strconv"
 

@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"api-lisa/pkg/v1/mysql"
-	"api-lisa/utils/config"
-	"api-lisa/utils/log"
+	"backend/pkg/v1/mysql"
+	"backend/utils/config"
+	"backend/utils/log"
 	"errors"
 	"net/http"
 	"strings"

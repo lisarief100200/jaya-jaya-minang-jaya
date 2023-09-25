@@ -64,3 +64,11 @@
 {"level":"info","msg":"Setip Logger Finish","time":"24-09-2023 16:07:00"}
 {"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"24-09-2023 16:07:00"}
 {"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"24-09-2023 16:07:00"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 09:00:30"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 09:00:30"}
+{"level":"fatal","msg":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","time":"25-09-2023 09:00:32"}
+{"level":"info","msg":"Setip Logger Finish","time":"25-09-2023 09:00:50"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"25-09-2023 09:00:50"}
+{"level":"info","msg":"start init DB Admin \u003cnil\u003e","time":"25-09-2023 09:00:50"}
+{"level":"info","msg":"Closing Item DB connection","time":"25-09-2023 09:01:04"}
+{"level":"info","msg":"Closing Admin DB connection","time":"25-09-2023 09:01:04"}

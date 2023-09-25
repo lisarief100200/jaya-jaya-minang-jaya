@@ -1,10 +1,10 @@
 package main
 
 import (
-	"api-lisa/controllers"
-	"api-lisa/pkg/v1/mysql"
-	"api-lisa/utils/config"
-	"api-lisa/utils/constants"
+	"backend/controllers"
+	"backend/pkg/v1/mysql"
+	"backend/utils/config"
+	"backend/utils/constants"
 	"context"
 	"log"
 	"net/http"
@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"time"
 
-	"api-lisa/api/health"
-	"api-lisa/router"
-	"api-lisa/scheduler"
+	"backend/api/health"
+	"backend/router"
+	"backend/scheduler"
 )
 
 func main() {

@@ -1,15 +1,15 @@
 package repositories
 
 import (
-	"api-lisa/domain"
-	"api-lisa/models"
-	"api-lisa/utils/log"
+	"backend/domain"
+	"backend/models"
+	"backend/utils/log"
 	"database/sql"
 	"errors"
 	"strings"
 	"time"
 
-	"api-lisa/pkg/v1/mysql"
+	"backend/pkg/v1/mysql"
 
 	"github.com/gin-gonic/gin"
 )

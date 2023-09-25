@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"api-lisa/utils/config"
+	"backend/utils/config"
 	"time"
 
 	jwt "github.com/dgrijalva/jwt-go"

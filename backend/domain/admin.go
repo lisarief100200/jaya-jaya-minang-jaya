@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"api-lisa/models"
+	"backend/models"
 	"time"
 
 	"github.com/gin-gonic/gin"

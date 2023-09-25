@@ -1,14 +1,14 @@
 package router
 
 import (
-	"api-lisa/controllers"
-	mw "api-lisa/middleware"
-	"api-lisa/pkg/v1/mysql"
-	"api-lisa/utils/config"
+	"backend/controllers"
+	mw "backend/middleware"
+	"backend/pkg/v1/mysql"
+	"backend/utils/config"
 
-	adminDelivv1 "api-lisa/api/admin/v1/delivery"
-	adminRepov1 "api-lisa/api/admin/v1/repositories"
-	adminUsecasev1 "api-lisa/api/admin/v1/usecase"
+	adminDelivv1 "backend/api/admin/v1/delivery"
+	adminRepov1 "backend/api/admin/v1/repositories"
+	adminUsecasev1 "backend/api/admin/v1/usecase"
 
 	healthcheck "github.com/RaMin0/gin-health-check"
 

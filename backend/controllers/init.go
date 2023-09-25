@@ -1,12 +1,12 @@
 package controllers
 
 import (
-	"api-lisa/middleware"
-	"api-lisa/models"
-	"api-lisa/pkg/v1/mysql"
-	"api-lisa/utils/config"
-	"api-lisa/utils/constants"
-	"api-lisa/utils/log"
+	"backend/middleware"
+	"backend/models"
+	"backend/pkg/v1/mysql"
+	"backend/utils/config"
+	"backend/utils/constants"
+	"backend/utils/log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
