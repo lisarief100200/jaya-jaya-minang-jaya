@@ -16,6 +16,7 @@ func TokenAuthGenerator(username, level, sessionId, uid string) (string, time.Ti
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"username": username,
 		"uid":      uid,
+		"level":    level,
 		"exp":      exp.Unix(), // Waktu kadaluarsa dalam bentuk Unix timestamp
 	})
 

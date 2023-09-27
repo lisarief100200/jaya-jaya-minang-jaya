@@ -21,28 +21,28 @@ func NewAuthUsecase(authRepo domain.AuthRepositories) domain.AuthUsecase {
 	}
 }
 
-func (r *AuthUsecase) CheckIdAdmin(c *gin.Context, req models.ReqLoginAdmin) (string, error) {
-	uid, err := r.ARepositories.CheckIdAdmin(c, strings.TrimSpace(req.Username))
+func (r *AuthUsecase) CheckIdUser(c *gin.Context, req models.ReqLoginUser) (string, error) {
+	uid, err := r.ARepositories.CheckIdUser(c, strings.TrimSpace(req.Username))
 	if err != nil {
 		return "", err
 	}
 	return uid, nil
 }
 
-func (r *AuthUsecase) CheckLoginAdmin(c *gin.Context, req models.ReqLoginAdmin, uid string) error {
-	validAdmin, err := r.ARepositories.CheckLoginAdmin(c, req, uid)
+func (r *AuthUsecase) CheckLoginUser(c *gin.Context, req models.ReqLoginUser, uid string) error {
+	validUser, err := r.ARepositories.CheckLoginUser(c, req, uid)
 	if err != nil {
 		return err
 	}
 
-	if !validAdmin {
+	if !validUser {
 		return err
 	}
 
 	return nil
 }
 
-func (r *AuthUsecase) GetPassword(c *gin.Context, uid string, req models.ReqLoginAdmin) error {
+func (r *AuthUsecase) GetPassword(c *gin.Context, uid string, req models.ReqLoginUser) error {
 	pass, err := r.ARepositories.GetPassword(c, uid)
 	if err != nil {
 		return err
@@ -69,10 +69,10 @@ func (r *AuthUsecase) GenerateSessionID(c *gin.Context, typeLogin string) (strin
 	return sessionId, nil
 }
 
-func (r *AuthUsecase) GetAdminProp(c *gin.Context, uid string) (models.AdminProp, error) {
-	prop, err := r.ARepositories.GetAdminProp(c, uid)
+func (r *AuthUsecase) GetUserProp(c *gin.Context, uid string) (models.UserProp, error) {
+	prop, err := r.ARepositories.GetUserProp(c, uid)
 	if err != nil {
-		return models.AdminProp{}, err
+		return models.UserProp{}, err
 	}
 	return prop, nil
 }
@@ -93,8 +93,8 @@ func (r *AuthUsecase) InsertSession(c *gin.Context, sessionId string, uid string
 	return nil
 }
 
-func (r *AuthUsecase) LogoutAdmin(c *gin.Context, uid int) error {
-	err := r.ARepositories.LogoutAdmin(c, uid)
+func (r *AuthUsecase) LogoutUser(c *gin.Context, uid int) error {
+	err := r.ARepositories.LogoutUser(c, uid)
 	if err != nil {
 		return err
 	}

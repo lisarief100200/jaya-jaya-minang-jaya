@@ -70,11 +70,11 @@ const (
 )
 
 const (
-	// Admin
-	LoginAdmin  = "[ADMIN][LoginAdmin]"
-	GetItem     = "[ADMIN][GetItems]"
-	CreateItem  = "[ADMIN][CreateItem]"
-	UpdateItem  = "[ADMIN][UpdateItem]"
-	DeleteItem  = "[ADMIN][DeleteItem]"
-	LogoutAdmin = "[ADMIN][LogoutAdmin]"
+	// User
+	LoginUser  = "[USER][LoginUser]"
+	GetItem    = "[USER][GetItems]"
+	CreateItem = "[USER][CreateItem]"
+	UpdateItem = "[USER][UpdateItem]"
+	DeleteItem = "[USER][DeleteItem]"
+	LogoutUser = "[USER][LogoutUser]"
 )

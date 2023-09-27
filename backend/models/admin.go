@@ -1,16 +1,16 @@
 package models
 
-type ReqLoginAdmin struct {
+type ReqLoginUser struct {
 	Username string `json:"username" binding:"required"`
 	Password string `json:"password" binding:"required"`
 }
 
-type RespLoginAdmin struct {
+type RespLoginUser struct {
 	Token    string `json:"token"`
 	RoleCode string `json:"roleCode"`
 }
 
-type AdminProp struct {
+type UserProp struct {
 	Name  string `json:"name"`
 	Level string `json:"level"`
 }

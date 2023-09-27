@@ -23,37 +23,37 @@ func NewTestRepoAuth(sql *sql.DB) domain.AuthRepositories {
 	}
 }
 
-func (t *AuthRepositories) CheckIdAdmin(c *gin.Context, username string) (string, error) {
+func (t *AuthRepositories) CheckIdUser(c *gin.Context, username string) (string, error) {
 	// Get connectionDB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin")
+		log.Log.Errorln("Error GetConnectionUser")
 		return "", err
 	}
 
 	var id string
 
-	err = db.QueryRow("SELECT id FROM tbl_admin WHERE username = ?", username).Scan(&id)
+	err = db.QueryRow("SELECT id FROM tbl_auth WHERE username = ?", username).Scan(&id)
 	if err != nil {
-		log.Log.Errorln("Error scanning query CheckIdAdmin")
+		log.Log.Errorln("Error scanning query CheckIdUser")
 		return "", err
 	}
 
 	return id, nil
 }
 
-func (t *AuthRepositories) CheckLoginAdmin(c *gin.Context, req models.ReqLoginAdmin, uid string) (exist bool, err error) {
+func (t *AuthRepositories) CheckLoginUser(c *gin.Context, req models.ReqLoginUser, uid string) (exist bool, err error) {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin")
+		log.Log.Errorln("Error GetConnectionUser")
 		return false, err
 	}
 
-	err = db.QueryRow("SELECT username, password FROM tbl_admin WHERE id = ?", uid).Scan(&req.Username, &req.Password)
+	err = db.QueryRow("SELECT username, password FROM tbl_auth WHERE id = ?", uid).Scan(&req.Username, &req.Password)
 	if err != nil {
 		if strings.Contains(err.Error(), "no rows") {
-			log.Log.Errorln("Error scanning query CheckLoginAdmin")
+			log.Log.Errorln("Error scanning query CheckLoginUser")
 			return false, errors.New("invalid")
 		}
 		return false, err
@@ -64,14 +64,14 @@ func (t *AuthRepositories) CheckLoginAdmin(c *gin.Context, req models.ReqLoginAd
 
 func (t *AuthRepositories) GetPassword(c *gin.Context, uid string) (string, error) {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin")
+		log.Log.Errorln("Error GetConnectionUser")
 		return "", err
 	}
 
 	var pass string
-	if err := db.QueryRow("SELECT password FROM tbl_admin where id = ?", uid).Scan(&pass); err != nil {
+	if err := db.QueryRow("SELECT password FROM tbl_auth where id = ?", uid).Scan(&pass); err != nil {
 		log.Log.Errorln("Error scanning query GetPassword")
 		return "", err
 	}
@@ -81,9 +81,9 @@ func (t *AuthRepositories) GetPassword(c *gin.Context, uid string) (string, erro
 
 func (t *AuthRepositories) GenerateSessionID(c *gin.Context, processName string) (string, error) {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin")
+		log.Log.Errorln("Error GetConnectionUser")
 	}
 
 	var sessionId string
@@ -95,31 +95,31 @@ func (t *AuthRepositories) GenerateSessionID(c *gin.Context, processName string)
 	return sessionId, nil
 }
 
-func (t *AuthRepositories) GetAdminProp(c *gin.Context, uid string) (models.AdminProp, error) {
-	var adminProp models.AdminProp
-	db, err := mysql.GetConnectionAdmin()
+func (t *AuthRepositories) GetUserProp(c *gin.Context, uid string) (models.UserProp, error) {
+	var userProp models.UserProp
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin", err.Error())
-		return adminProp, err
+		log.Log.Errorln("Error GetConnectionUser", err.Error())
+		return userProp, err
 	}
 
-	if err := db.QueryRow("SELECT name, level FROM tbl_admin WHERE id = ?", uid).Scan(&adminProp.Name, &adminProp.Level); err != nil {
-		log.Log.Errorln("Error running query GetAdminProp", err.Error())
-		return adminProp, err
+	if err := db.QueryRow("SELECT name, level FROM tbl_auth WHERE id = ?", uid).Scan(&userProp.Name, &userProp.Level); err != nil {
+		log.Log.Errorln("Error running query GetUserProp", err.Error())
+		return userProp, err
 	}
 
-	return adminProp, nil
+	return userProp, nil
 }
 
 func (t *AuthRepositories) UpdateLastLogin(c *gin.Context, uid string) error {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin", err.Error())
+		log.Log.Errorln("Error GetConnectionUser", err.Error())
 		return err
 	}
 
-	if _, err = db.Exec("UPDATE tbl_admin SET latest_login = now() WHERE id = ?", uid); err != nil {
+	if _, err = db.Exec("UPDATE tbl_auth SET latest_login = now() WHERE id = ?", uid); err != nil {
 		log.Log.Errorln("Error running query UpdateLastLogin : ", err.Error())
 		return err
 	}
@@ -129,9 +129,9 @@ func (t *AuthRepositories) UpdateLastLogin(c *gin.Context, uid string) error {
 
 func (t *AuthRepositories) InsertSession(c *gin.Context, session, uid, tipe, token string, exptime time.Time) error {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin", err.Error())
+		log.Log.Errorln("Error GetConnectionUser", err.Error())
 		return err
 	}
 
@@ -155,23 +155,23 @@ func (t *AuthRepositories) InsertSession(c *gin.Context, session, uid, tipe, tok
 	return nil
 }
 
-func (t *AuthRepositories) LogoutAdmin(c *gin.Context, uid int) error {
+func (t *AuthRepositories) LogoutUser(c *gin.Context, uid int) error {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin", err.Error())
+		log.Log.Errorln("Error GetConnectionUser", err.Error())
 		return err
 	}
 
 	var id int
 	// Get the latest session that inserted into tbl_session
 	if err := db.QueryRow("SELECT id FROM tbl_session ORDER BY expired_time DESC LIMIT 1").Scan(&id); err != nil {
-		log.Log.Errorln("Error scanning query LogoutAdmin : ")
+		log.Log.Errorln("Error scanning query LogoutUser : ")
 		return err
 	}
 
 	if _, err := db.Exec("UPDATE tbl_session SET status = 0 WHERE id = ?", id); err != nil {
-		log.Log.Errorln("Error running query LogoutAdmin : ")
+		log.Log.Errorln("Error running query LogoutUser : ")
 		return err
 	}
 

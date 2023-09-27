@@ -19,38 +19,38 @@ type Controllers struct {
 }
 
 // NewAuthController represent auth handler
-func NewAuthController(gPublic, gAdmin *gin.RouterGroup, au domain.AuthUsecase) {
+func NewAuthController(gPublic, gUser *gin.RouterGroup, au domain.AuthUsecase) {
 	handler := &Controllers{AUsecase: au}
-	gPublic.POST("/login/5", handler.LoginAdmin)
-	gAdmin.GET("/logout", handler.LogoutAdmin)
+	gPublic.POST("/login/5", handler.LoginUser)
+	gUser.GET("/logout", handler.LogoutUser)
 }
 
-func (r *Controllers) LoginAdmin(c *gin.Context) {
+func (r *Controllers) LoginUser(c *gin.Context) {
 	var (
-		req     models.ReqLoginAdmin
-		respObj models.RespLoginAdmin
+		req     models.ReqLoginUser
+		respObj models.RespLoginUser
 	)
 
 	if err := c.ShouldBindJSON(&req); err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.BadRequestCode, RespMessage: "Failed binding request from JSON", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}
 
-	// Get Id Admin
-	uid, err := r.AUsecase.CheckIdAdmin(c, req)
+	// Get Id User
+	uid, err := r.AUsecase.CheckIdUser(c, req)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or passowrd", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}
 
-	// Check whether admin is valid or not
-	err = r.AUsecase.CheckLoginAdmin(c, req, uid)
+	// Check whether user is valid or not
+	err = r.AUsecase.CheckLoginUser(c, req, uid)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or passowrd", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
@@ -59,12 +59,12 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 	err = r.AUsecase.GetPassword(c, uid, req)
 	if err != nil {
 		if strings.IsContains(err.Error(), "password") {
-			log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+			log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 			resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid password", Response: nil}
 			c.JSON(http.StatusOK, resp)
 			return
 		}
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
@@ -75,16 +75,16 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 	// Generate sessionID
 	sessionId, err := r.AUsecase.GenerateSessionID(c, typeLogin)
 	if err != nil {
-		log.Log.Error(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Error(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}
 
-	// Prop Admin
-	prop, err := r.AUsecase.GetAdminProp(c, uid)
+	// Prop User
+	prop, err := r.AUsecase.GetUserProp(c, uid)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or passowrd", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
@@ -93,7 +93,7 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 	// Generate token
 	tokenString, exp, err := controllers.TokenAuthGenerator(req.Username, prop.Level, sessionId, uid)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or passowrd", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
@@ -101,7 +101,7 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 
 	err = r.AUsecase.UpdateLastLogin(c, uid)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
@@ -109,23 +109,23 @@ func (r *Controllers) LoginAdmin(c *gin.Context) {
 
 	err = r.AUsecase.InsertSession(c, sessionId, uid, typeLogin, tokenString, exp)
 	if err != nil {
-		log.Log.Errorf(constants.LoginAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LoginUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}
 
-	respObj = models.RespLoginAdmin{
+	respObj = models.RespLoginUser{
 		Token:    tokenString,
 		RoleCode: prop.Level,
 	}
 
-	log.Log.Error(constants.LoginAdmin+constants.SuccessReqestId, requestid.Get(c))
+	log.Log.Error(constants.LoginUser+constants.SuccessReqestId, requestid.Get(c))
 	resp := models.ResponseV2{RespCode: constants.SuccessCode, RespMessage: "Success", Response: respObj}
 	c.JSON(http.StatusOK, resp)
 }
 
-func (r *Controllers) LogoutAdmin(c *gin.Context) {
+func (r *Controllers) LogoutUser(c *gin.Context) {
 	uid, err := controllers.GetUid(c)
 	if err != nil {
 		res := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid Session", Response: nil}
@@ -134,15 +134,15 @@ func (r *Controllers) LogoutAdmin(c *gin.Context) {
 	}
 
 	uidInt, _ := strconv.Atoi(uid)
-	err = r.AUsecase.LogoutAdmin(c, uidInt)
+	err = r.AUsecase.LogoutUser(c, uidInt)
 	if err != nil {
-		log.Log.Errorf(constants.LogoutAdmin+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
+		log.Log.Errorf(constants.LogoutUser+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
 		resp := models.ResponseV2{RespCode: constants.BadRequestCode, RespMessage: "Bad Request", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}
 
-	log.Log.Error(constants.LogoutAdmin+constants.SuccessReqestId, requestid.Get(c))
+	log.Log.Error(constants.LogoutUser+constants.SuccessReqestId, requestid.Get(c))
 	resp := models.ResponseV2{RespCode: constants.SuccessCode, RespMessage: "Success", Response: nil}
 	c.JSON(http.StatusOK, resp)
 }

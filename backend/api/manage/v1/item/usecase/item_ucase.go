@@ -4,6 +4,7 @@ import (
 	"backend/domain"
 	"backend/models"
 	"io/ioutil"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,10 +19,21 @@ func NewItemUsecase(itemRepo domain.ItemRepositories) domain.ItemUsecase {
 	}
 }
 
-func (r *ItemUsecase) GetItems(c *gin.Context) ([]models.RespGetList, error) {
-	list, err := r.IRepositories.GetItems(c)
-	if err != nil {
-		return []models.RespGetList{}, err
+func (r *ItemUsecase) GetItems(c *gin.Context, uid, level string) ([]models.RespGetList, error) {
+	var list []models.RespGetList
+	var err error
+	uidInt, _ := strconv.Atoi(uid)
+
+	if level == "admin" {
+		list, err = r.IRepositories.GetItems(c)
+		if err != nil {
+			return []models.RespGetList{}, err
+		}
+	} else {
+		list, err = r.IRepositories.GetItemsById(c, uidInt)
+		if err != nil {
+			return []models.RespGetList{}, err
+		}
 	}
 
 	return list, nil

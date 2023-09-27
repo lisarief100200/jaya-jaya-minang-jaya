@@ -6,13 +6,13 @@ import (
 	"backend/pkg/v1/mysql"
 	"backend/utils/config"
 
-	authDelivv1 "backend/api/admin/v1/auth/delivery"
-	authRepov1 "backend/api/admin/v1/auth/repositories"
-	authUsecasev1 "backend/api/admin/v1/auth/usecase"
+	authDelivv1 "backend/api/manage/v1/auth/delivery"
+	authRepov1 "backend/api/manage/v1/auth/repositories"
+	authUsecasev1 "backend/api/manage/v1/auth/usecase"
 
-	itemDelivv1 "backend/api/admin/v1/item/delivery"
-	itemRepov1 "backend/api/admin/v1/item/repositories"
-	itemUsecasev1 "backend/api/admin/v1/item/usecase"
+	itemDelivv1 "backend/api/manage/v1/item/delivery"
+	itemRepov1 "backend/api/manage/v1/item/repositories"
+	itemUsecasev1 "backend/api/manage/v1/item/usecase"
 
 	healthcheck "github.com/RaMin0/gin-health-check"
 
@@ -45,7 +45,7 @@ func CreateRouter(isDev bool) *gin.Engine {
 
 func InitRouteV1_0_0(router *gin.Engine) {
 	//v1Private := router.Group("/v1.0/private")
-	v1Admin := router.Group("/v1.0/admin")
+	v1Private := router.Group("/v1.0/private")
 	v1Public := router.Group("/v1.0/public")
 
 	db, err := mysql.GetConnectionItem()
@@ -53,7 +53,7 @@ func InitRouteV1_0_0(router *gin.Engine) {
 		return
 	}
 
-	v1Admin.Use(controllers.MiddlewareFuncOverrideAdmin())
+	v1Private.Use(controllers.MiddlewareFuncOverrideUser())
 
 	// repositories
 	ar := authRepov1.NewTestRepoAuth(db)
@@ -64,6 +64,6 @@ func InitRouteV1_0_0(router *gin.Engine) {
 	iu := itemUsecasev1.NewItemUsecase(ir)
 
 	// handler
-	authDelivv1.NewAuthController(v1Public, v1Admin, au)
-	itemDelivv1.NewItemController(v1Admin, iu)
+	authDelivv1.NewAuthController(v1Public, v1Private, au)
+	itemDelivv1.NewItemController(v1Private, iu)
 }

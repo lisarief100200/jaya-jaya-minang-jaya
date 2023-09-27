@@ -10,8 +10,8 @@ import (
 )
 
 var (
-	dbItem  *dbPgsql
-	dbAdmin *dbPgsql
+	dbItem *dbPgsql
+	dbAuth *dbPgsql
 )
 
 type dbPgsql struct {
@@ -24,7 +24,7 @@ func InitDBConnection() error {
 		return err
 	}
 
-	err = InitConnectionAdmin()
+	err = InitConnectionAuth()
 	if err != nil {
 		return err
 	}
@@ -52,10 +52,10 @@ func InitConnectionItem() error {
 	return nil
 }
 
-func InitConnectionAdmin() error {
-	log.Log.Println("start init DB Admin", nil)
-	dbAdmin = new(dbPgsql)
-	conn, errdb := sql.Open("mysql", config.MyConfig.DbAdmin)
+func InitConnectionAuth() error {
+	log.Log.Println("start init DB User", nil)
+	dbAuth = new(dbPgsql)
+	conn, errdb := sql.Open("mysql", config.MyConfig.DbAuth)
 	if errdb != nil {
 		return errdb
 	}
@@ -67,7 +67,7 @@ func InitConnectionAdmin() error {
 	conn.SetMaxIdleConns(2)
 	conn.SetConnMaxLifetime(5 * time.Minute)
 
-	dbAdmin.dbPq = conn
+	dbAuth.dbPq = conn
 
 	return nil
 }
@@ -76,8 +76,8 @@ func GetConnectionItem() (*sql.DB, error) {
 	return dbItem.GetConnection()
 }
 
-func GetConnectionAdmin() (*sql.DB, error) {
-	return dbAdmin.GetConnection()
+func GetConnectionUser() (*sql.DB, error) {
+	return dbAuth.GetConnection()
 }
 
 func (dpq *dbPgsql) GetConnection() (*sql.DB, error) {
@@ -89,7 +89,7 @@ func (dpq *dbPgsql) GetConnection() (*sql.DB, error) {
 
 func CloseDBConnection() {
 	closeItemConnection()
-	closeAdminConnection()
+	closeUserConnection()
 }
 
 func closeItemConnection() {
@@ -97,7 +97,7 @@ func closeItemConnection() {
 	dbItem.dbPq.Close()
 }
 
-func closeAdminConnection() {
-	log.Log.Println("Closing Admin DB connection")
-	dbAdmin.dbPq.Close()
+func closeUserConnection() {
+	log.Log.Println("Closing User DB connection")
+	dbAuth.dbPq.Close()
 }

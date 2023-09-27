@@ -18,20 +18,34 @@ type Controllers struct {
 }
 
 // NewItemController represent item handler constructor
-func NewItemController(gAdmin *gin.RouterGroup, iu domain.ItemUsecase) {
+func NewItemController(gUser *gin.RouterGroup, iu domain.ItemUsecase) {
 	handler := &Controllers{IUsecase: iu}
 
-	gAdmin.GET("/item", handler.GetItems)
-	gAdmin.POST("/item", handler.CreateItem)
-	gAdmin.PUT("/item", handler.UpdateItem)
-	gAdmin.DELETE("/item", handler.DeleteItem)
+	gUser.GET("/item", handler.GetItems)
+	gUser.POST("/item", handler.CreateItem)
+	gUser.PUT("/item", handler.UpdateItem)
+	gUser.DELETE("/item", handler.DeleteItem)
 }
 
 func (r *Controllers) GetItems(c *gin.Context) {
-	respObj, err := r.IUsecase.GetItems(c)
+	uid, err := controllers.GetUid(c)
+	if err != nil {
+		res := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid Session", Response: nil}
+		c.JSON(http.StatusOK, res)
+		return
+	}
+
+	level, err := controllers.GetLevel(c)
+	if err != nil {
+		res := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid Session", Response: nil}
+		c.JSON(http.StatusOK, res)
+		return
+	}
+
+	respObj, err := r.IUsecase.GetItems(c, uid, level)
 	if err != nil {
 		log.Log.Errorf(constants.GetItem+constants.ErrorForRequestId, err.Error(), requestid.Get(c))
-		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Invalid username or password", Response: nil}
+		resp := models.ResponseV2{RespCode: constants.InvalidSessionCode, RespMessage: "Bad Request", Response: nil}
 		c.JSON(http.StatusOK, resp)
 		return
 	}

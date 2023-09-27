@@ -12,7 +12,7 @@ import (
 	"github.com/golang-jwt/jwt"
 )
 
-func MiddlewareFuncOverrideAdmin() gin.HandlerFunc {
+func MiddlewareFuncOverrideUser() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tokenString := c.GetHeader("Authorization")
 
@@ -45,6 +45,14 @@ func MiddlewareFuncOverrideAdmin() gin.HandlerFunc {
 			return
 		}
 
+		// Ambil roleCode dari claims JWT
+		level, ok := claims.Claims.(jwt.MapClaims)["level"].(string)
+		if !ok {
+			c.JSON(http.StatusUnauthorized, gin.H{"message": "Invalid token"})
+			c.Abort()
+			return
+		}
+
 		if !IsValidToken(uid, token) {
 			c.JSON(http.StatusUnauthorized, gin.H{"message": "Invalid token"})
 			c.Abort()
@@ -53,6 +61,7 @@ func MiddlewareFuncOverrideAdmin() gin.HandlerFunc {
 
 		// Tambahkan UID ke dalam konteks Gin.
 		c.Set("uid", uid)
+		c.Set("level", level)
 
 		c.Next()
 	}
@@ -60,9 +69,9 @@ func MiddlewareFuncOverrideAdmin() gin.HandlerFunc {
 
 func IsValidToken(uid, tokenString string) bool {
 	// Get connection DB
-	db, err := mysql.GetConnectionAdmin()
+	db, err := mysql.GetConnectionUser()
 	if err != nil {
-		log.Log.Errorln("Error GetConnectionAdmin", err.Error())
+		log.Log.Errorln("Error GetConnectionUser", err.Error())
 		return false
 	}
 
@@ -72,7 +81,7 @@ func IsValidToken(uid, tokenString string) bool {
 	query := "SELECT token FROM tbl_session WHERE user_id = ? AND status = 1"
 
 	if err := db.QueryRow(query, uid).Scan(&token); err != nil {
-		log.Log.Errorln("Error running query GetAdminProp", err.Error())
+		log.Log.Errorln("Error running query GetUserProp", err.Error())
 		return false
 	}
 
@@ -89,4 +98,12 @@ func GetUid(c *gin.Context) (string, error) {
 		return "", errors.New("undefined User Id")
 	}
 	return uid.(string), nil
+}
+
+func GetLevel(c *gin.Context) (string, error) {
+	level, valid := c.Get("level")
+	if !valid {
+		return "", errors.New("undefined User Id")
+	}
+	return level.(string), nil
 }

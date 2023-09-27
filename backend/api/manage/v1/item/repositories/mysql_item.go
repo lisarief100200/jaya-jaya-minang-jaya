@@ -53,6 +53,39 @@ func (t *ItemRepositories) GetItems(c *gin.Context) ([]models.RespGetList, error
 	return getItems, nil
 }
 
+func (t *ItemRepositories) GetItemsById(c *gin.Context, uid int) ([]models.RespGetList, error) {
+	// Get connection DB
+	db, err := mysql.GetConnectionItem()
+	if err != nil {
+		log.Log.Errorln("Error GetConnectionItem", err.Error())
+		return []models.RespGetList{}, err
+	}
+
+	rows, err := db.Query("SELECT a.id, a.name, a.price, a.stock_quantity, b.category, a.description, a.image FROM tbl_item AS a LEFT JOIN tbl_category AS b ON b.id = a.id_category WHERE a.user_id = ?;", uid)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return []models.RespGetList{}, err
+		}
+		return []models.RespGetList{}, err
+	}
+	defer rows.Close()
+
+	// Mapping to struct rows
+	var getItems []models.RespGetList
+	for rows.Next() {
+		getItem := models.RespGetList{}
+		if errScan := rows.Scan(&getItem.Id, &getItem.Name, &getItem.Price, &getItem.Stock, &getItem.Category, &getItem.Description, &getItem.Image); errScan != nil {
+			return []models.RespGetList{}, err
+		}
+		getItems = append(getItems, getItem)
+	}
+	if errRows := rows.Err(); errRows != nil {
+		return []models.RespGetList{}, err
+	}
+
+	return getItems, nil
+}
+
 func (t *ItemRepositories) CreateItem(c *gin.Context, req models.ReqCreateItem, image []byte, uid int) error {
 	// Get connection DB
 	db, err := mysql.GetConnectionItem()

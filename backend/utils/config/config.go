@@ -13,9 +13,9 @@ type Config struct {
 	ServerPort  string `mapstructure:"SERVER_PORT"`
 	Timeout     int    `mapstructure:"TIMEOUT"`
 	DbItem      string `mapstructure:"DB_ITEM"`
-	DbAdmin     string `mapstructure:"DB_ADMIN"`
+	DbAuth      string `mapstructure:"DB_AUTH"`
 	//AuthUrl     string `mapstructure:"AUTH_URL"`
-	//AdminUrl    string `mapstructure:"ADMIN_URL"`
+	//UserUrl    string `mapstructure:"ADMIN_URL"`
 	Host      string `mapstructure:"HOST"`
 	SecretKey string `mapstructure:"SECRET_KEY"`
 }
