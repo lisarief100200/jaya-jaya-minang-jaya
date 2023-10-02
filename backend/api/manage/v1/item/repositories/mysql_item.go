@@ -102,22 +102,6 @@ func (t *ItemRepositories) CreateItem(c *gin.Context, req models.ReqCreateItem, 
 	return nil
 }
 
-func (t *ItemRepositories) GetFilePath(c *gin.Context, req *models.ReqUpdateItem) (string, error) {
-	db, err := mysql.GetConnectionItem()
-	if err != nil {
-		log.Log.Errorln("Error GetConnectionItem", err.Error())
-		return "", err
-	}
-
-	var path string
-	if err := db.QueryRow("SELECT image FROM tbl_item where id = ?", req.Id).Scan(&path); err != nil {
-		log.Log.Errorln("Error scanning query GetFilePath")
-		return "", err
-	}
-
-	return path, nil
-}
-
 func (t *ItemRepositories) UpdateItem(c *gin.Context, req models.ReqUpdateItem, image []byte, uid int) error {
 	// Get connection DB
 	db, err := mysql.GetConnectionItem()

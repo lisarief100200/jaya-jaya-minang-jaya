@@ -14,6 +14,10 @@ import (
 	itemRepov1 "backend/api/manage/v1/item/repositories"
 	itemUsecasev1 "backend/api/manage/v1/item/usecase"
 
+	utilDeelivv1 "backend/api/manage/v1/utilities/delivery"
+	utilRepov1 "backend/api/manage/v1/utilities/repositories"
+	utilUsecasev1 "backend/api/manage/v1/utilities/usecase"
+
 	healthcheck "github.com/RaMin0/gin-health-check"
 
 	"github.com/gin-contrib/requestid"
@@ -58,12 +62,15 @@ func InitRouteV1_0_0(router *gin.Engine) {
 	// repositories
 	ar := authRepov1.NewTestRepoAuth(db)
 	ir := itemRepov1.NewTestRepoItem(db)
+	ur := utilRepov1.NewTestRepoUtilities(db)
 
 	// usecase
 	au := authUsecasev1.NewAuthUsecase(ar)
 	iu := itemUsecasev1.NewItemUsecase(ir)
+	uu := utilUsecasev1.NewUtilitiesUsecase(ur)
 
 	// handler
 	authDelivv1.NewAuthController(v1Public, v1Private, au)
 	itemDelivv1.NewItemController(v1Private, iu)
+	utilDeelivv1.NewUtilitiesController(v1Private, uu)
 }

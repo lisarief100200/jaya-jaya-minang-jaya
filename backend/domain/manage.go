@@ -40,7 +40,21 @@ type ItemRepositories interface {
 	CreateItem(c *gin.Context, req models.ReqCreateItem, imagePath []byte, uid int) error
 	GetItems(c *gin.Context) ([]models.RespGetList, error)
 	GetItemsById(c *gin.Context, uid int) ([]models.RespGetList, error)
-	GetFilePath(c *gin.Context, req *models.ReqUpdateItem) (string, error)
 	UpdateItem(c *gin.Context, req models.ReqUpdateItem, imagePath []byte, uid int) error
 	DeleteItem(c *gin.Context, req models.ReqDeleteItem) error
+}
+
+type UtilitiesUsecase interface {
+	CreateUtilities(c *gin.Context, req *models.ReqCreateUtilities, uid int) error
+	GetUtilities(c *gin.Context, uid, level string) ([]models.RespGetList, error)
+	UpdateUtilities(c *gin.Context, req *models.ReqUpdateUtilities, uid int) error
+	DeleteUtilities(c *gin.Context, req models.ReqDeleteUtilities) error
+}
+
+type UtilitiesRepositories interface {
+	CreateUtilities(c *gin.Context, req models.ReqCreateUtilities, imagePath []byte, uid int) error
+	GetUtilities(c *gin.Context) ([]models.RespGetList, error)
+	GetUtilitiesById(c *gin.Context, uid int) ([]models.RespGetList, error)
+	UpdateUtilities(c *gin.Context, req models.ReqUpdateUtilities, imagePath []byte, uid int) error
+	DeleteUtilities(c *gin.Context, req models.ReqDeleteUtilities) error
 }

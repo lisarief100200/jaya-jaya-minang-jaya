@@ -72,9 +72,17 @@ const (
 const (
 	// User
 	LoginUser  = "[USER][LoginUser]"
-	GetItem    = "[USER][GetItems]"
-	CreateItem = "[USER][CreateItem]"
-	UpdateItem = "[USER][UpdateItem]"
-	DeleteItem = "[USER][DeleteItem]"
 	LogoutUser = "[USER][LogoutUser]"
+
+	// Item
+	GetItem    = "[ITEM][GetItems]"
+	CreateItem = "[ITEM][CreateItem]"
+	UpdateItem = "[ITEM][UpdateItem]"
+	DeleteItem = "[ITEM][DeleteItem]"
+
+	// Utilities
+	GetUtilities    = "[UTILITIES][GetUtilities]"
+	CreateUtilities = "[UTILITIES][CreateUtilities]"
+	UpdateUtilities = "[UTILITIES][UpdateUtilities]"
+	DeleteUtilities = "[UTILITIES][DeleteUtilities]"
 )

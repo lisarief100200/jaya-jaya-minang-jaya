@@ -47,3 +47,26 @@ type ReqUpdateItem struct {
 type ReqDeleteItem struct {
 	Id int64 `json:"id"`
 }
+
+type ReqCreateUtilities struct {
+	Name        string `json:"name" form:"name"`
+	Price       int64  `json:"price" form:"price"`
+	Stock       int64  `json:"stock" form:"stock"`
+	IdCategory  int64  `json:"idCategory" form:"idCategory"`
+	Description string `json:"description" form:"description"`
+	//Image       string `json:"image" form:"image"`
+}
+
+type ReqUpdateUtilities struct {
+	Id          int64  `json:"id" form:"id"`
+	Name        string `json:"name" form:"name"`
+	Price       int64  `json:"price" form:"price"`
+	Stock       int64  `json:"stock" form:"stock"`
+	IdCategory  int64  `json:"idCategory" form:"idCategory"`
+	Description string `json:"description" form:"description"`
+	//Image       string `json:"image" form:"image"`
+}
+
+type ReqDeleteUtilities struct {
+	Id int64 `json:"id"`
+}
