@@ -14,6 +14,7 @@ type Config struct {
 	Timeout     int    `mapstructure:"TIMEOUT"`
 	DbItem      string `mapstructure:"DB_ITEM"`
 	DbAuth      string `mapstructure:"DB_AUTH"`
+	DbCashFlow  string `mapstructure:"DB_CASH_FLOW"`
 	//AuthUrl     string `mapstructure:"AUTH_URL"`
 	//UserUrl    string `mapstructure:"ADMIN_URL"`
 	Host      string `mapstructure:"HOST"`

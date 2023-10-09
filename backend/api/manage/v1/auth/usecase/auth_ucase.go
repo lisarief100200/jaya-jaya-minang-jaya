@@ -4,7 +4,6 @@ import (
 	"backend/domain"
 	"backend/models"
 	"errors"
-	"fmt"
 	"strings"
 	"time"
 
@@ -50,9 +49,6 @@ func (r *AuthUsecase) GetPassword(c *gin.Context, uid string, req models.ReqLogi
 
 	//ps := helpers.Hashed(req.Password)
 	ps := req.Password
-
-	fmt.Println(ps, "ps")
-	fmt.Println(pass, "pass")
 
 	if ps != pass {
 		return errors.New("password")

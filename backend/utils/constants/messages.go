@@ -85,4 +85,10 @@ const (
 	CreateUtilities = "[UTILITIES][CreateUtilities]"
 	UpdateUtilities = "[UTILITIES][UpdateUtilities]"
 	DeleteUtilities = "[UTILITIES][DeleteUtilities]"
+
+	// Cash Flow
+	GetCashFlow    = "[CASHFLOW][GetCashFlow]"
+	CreateCashFlow = "[CASHFLOW][CreateCashFlow]"
+	UpdateCashFlow = "[CASHFLOW][UpdateCashFlow]"
+	DeleteCashFlow = "[CASHFLOW][DeleteCashFlow]"
 )

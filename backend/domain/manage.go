@@ -58,3 +58,14 @@ type UtilitiesRepositories interface {
 	UpdateUtilities(c *gin.Context, req models.ReqUpdateUtilities, imagePath []byte, uid int) error
 	DeleteUtilities(c *gin.Context, req models.ReqDeleteUtilities) error
 }
+
+type CashFlowUsecase interface {
+	GetCashFlow(c *gin.Context, uid, level string) (models.RespGetCashFlow, error)
+}
+
+type CashFlowRepositories interface {
+	GetIncome(c *gin.Context) ([]models.RespIncomeDetail, error)
+	GetIncomeById(c *gin.Context, uid int) ([]models.RespIncomeDetail, error)
+	GetExpenses(c *gin.Context) ([]models.RespExpensesDetail, error)
+	GetExpensesById(c *gin.Context, uid int) ([]models.RespExpensesDetail, error)
+}

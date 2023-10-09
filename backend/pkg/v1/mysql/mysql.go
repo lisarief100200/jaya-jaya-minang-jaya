@@ -10,8 +10,9 @@ import (
 )
 
 var (
-	dbItem *dbPgsql
-	dbAuth *dbPgsql
+	dbItem     *dbPgsql
+	dbAuth     *dbPgsql
+	dbCashFlow *dbPgsql
 )
 
 type dbPgsql struct {
@@ -25,6 +26,11 @@ func InitDBConnection() error {
 	}
 
 	err = InitConnectionAuth()
+	if err != nil {
+		return err
+	}
+
+	err = InitConnectionCashFlow()
 	if err != nil {
 		return err
 	}
@@ -72,12 +78,36 @@ func InitConnectionAuth() error {
 	return nil
 }
 
+func InitConnectionCashFlow() error {
+	log.Log.Println("start init DB Cash Flow", nil)
+	dbCashFlow = new(dbPgsql)
+	conn, errdb := sql.Open("mysql", config.MyConfig.DbCashFlow)
+	if errdb != nil {
+		return errdb
+	}
+	if err := conn.Ping(); err != nil {
+		return err
+	}
+
+	conn.SetMaxOpenConns(3)
+	conn.SetMaxIdleConns(2)
+	conn.SetConnMaxLifetime(5 * time.Minute)
+
+	dbCashFlow.dbPq = conn
+
+	return nil
+}
+
 func GetConnectionItem() (*sql.DB, error) {
 	return dbItem.GetConnection()
 }
 
 func GetConnectionUser() (*sql.DB, error) {
 	return dbAuth.GetConnection()
+}
+
+func GetConnectionCashFlow() (*sql.DB, error) {
+	return dbCashFlow.GetConnection()
 }
 
 func (dpq *dbPgsql) GetConnection() (*sql.DB, error) {
@@ -90,6 +120,7 @@ func (dpq *dbPgsql) GetConnection() (*sql.DB, error) {
 func CloseDBConnection() {
 	closeItemConnection()
 	closeUserConnection()
+	closeCashFlowConnection()
 }
 
 func closeItemConnection() {
@@ -100,4 +131,9 @@ func closeItemConnection() {
 func closeUserConnection() {
 	log.Log.Println("Closing User DB connection")
 	dbAuth.dbPq.Close()
+}
+
+func closeCashFlowConnection() {
+	log.Log.Println("Closing Cash Flow DB connection")
+	dbCashFlow.dbPq.Close()
 }

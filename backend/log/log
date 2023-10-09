@@ -2,3 +2,564 @@
 {"latency":"959.4949ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"3dc2c1f6-98e5-4190-b81e-a97e4c5d7714","responseBody":"","time":"02-10-2023 08:47:24","url":"/v1.0/private/utilities","userAgent":"PostmanRuntime/7.33.0"}
 {"level":"info","msg":"Closing Item DB connection","time":"02-10-2023 08:48:08"}
 {"level":"info","msg":"Closing User DB connection","time":"02-10-2023 08:48:08"}
+{"level":"info","msg":"Setip Logger Finish","time":"04-10-2023 10:10:34"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"04-10-2023 10:10:34"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"04-10-2023 10:10:34"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"04-10-2023 10:10:34"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"8d029b9a-e2f0-44d8-9b2f-d1fb263f5816","time":"04-10-2023 14:13:31","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v8d029b9a-e2f0-44d8-9b2f-d1fb263f5816","time":"04-10-2023 14:13:31"}
+{"latency":"50.7935ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"8d029b9a-e2f0-44d8-9b2f-d1fb263f5816","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY0OTAwMTEsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.REEEhmhTBHjxFn0fdtEtjL4ZIdXZDKh2JhACGe0kUSE\",\"roleCode\":\"user\"}}","time":"04-10-2023 14:13:31","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"04-10-2023 14:22:23"}
+{"level":"info","msg":"Closing User DB connection","time":"04-10-2023 14:22:23"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"04-10-2023 14:22:23"}
+{"level":"info","msg":"Setip Logger Finish","time":"04-10-2023 16:03:44"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"04-10-2023 16:03:44"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"04-10-2023 16:03:44"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"04-10-2023 16:03:44"}
+{"level":"info","msg":"Setip Logger Finish","time":"04-10-2023 16:04:22"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"04-10-2023 16:04:22"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"04-10-2023 16:04:22"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"04-10-2023 16:04:22"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"39d1be16-36d8-4db7-b7d1-fe8a83ae1329","time":"04-10-2023 16:04:54","url":"/v1/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"2.3903ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"39d1be16-36d8-4db7-b7d1-fe8a83ae1329","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:04:54","url":"/v1/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"449586f5-de3e-48ec-a835-e710857c26b3","time":"04-10-2023 16:05:10","url":"/v1/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"506.3µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"449586f5-de3e-48ec-a835-e710857c26b3","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:05:10","url":"/v1/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"d3e15c5c-d649-40a8-a700-a741b275e5cf","time":"04-10-2023 16:05:18","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %vd3e15c5c-d649-40a8-a700-a741b275e5cf","time":"04-10-2023 16:05:18"}
+{"latency":"23.7201ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"d3e15c5c-d649-40a8-a700-a741b275e5cf","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY0OTY3MTgsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.s2Vqc_uhO4Ne7IYeT0KdkFo-j4a2kSonAOhbLreDids\",\"roleCode\":\"user\"}}","time":"04-10-2023 16:05:18","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"a9182937-e001-472d-8751-50f888dabc71","time":"04-10-2023 16:05:23","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"2.3664ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"a9182937-e001-472d-8751-50f888dabc71","responseBody":"{\"message\":\"Invalid token\"}","time":"04-10-2023 16:05:23","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"284acea5-a7a8-45bf-99d4-291b9081e3af","time":"04-10-2023 16:05:46","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LogoutUser]SUCCESS for requestid: %v284acea5-a7a8-45bf-99d4-291b9081e3af","time":"04-10-2023 16:05:46"}
+{"latency":"5.4471ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"284acea5-a7a8-45bf-99d4-291b9081e3af","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"04-10-2023 16:05:46","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"6959bcc3-7649-48cc-b200-9753f5b96ea3","time":"04-10-2023 16:07:00","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error running query GetUserProp sql: no rows in result set","time":"04-10-2023 16:07:00"}
+{"latency":"2.9964ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"6959bcc3-7649-48cc-b200-9753f5b96ea3","responseBody":"{\"message\":\"Invalid token\"}","time":"04-10-2023 16:07:00","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0e2114c5-eac1-42d9-aa9a-6cfb7609cec4","time":"04-10-2023 16:07:06","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"721.5µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0e2114c5-eac1-42d9-aa9a-6cfb7609cec4","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:07:06","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"e25296f7-e057-4d57-bc3d-2a6d4e3e9a83","time":"04-10-2023 16:07:08","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"559.4µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"e25296f7-e057-4d57-bc3d-2a6d4e3e9a83","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:07:08","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"ca170409-6e4b-4faf-be71-fd872e16907a","time":"04-10-2023 16:07:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.1213ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"ca170409-6e4b-4faf-be71-fd872e16907a","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:07:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"d6eea3da-9c47-410d-b52c-5dc9c5a6b806","time":"04-10-2023 16:08:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.0063ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"d6eea3da-9c47-410d-b52c-5dc9c5a6b806","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:08:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"ed55f22f-bb1e-494d-8b2f-0b0c7f479ffe","time":"04-10-2023 16:08:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.2648ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"ed55f22f-bb1e-494d-8b2f-0b0c7f479ffe","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:08:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"791d26b1-ebba-4afc-a742-2800428cb26c","time":"04-10-2023 16:08:29","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error running query GetUserProp sql: no rows in result set","time":"04-10-2023 16:08:29"}
+{"latency":"2.2109ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"791d26b1-ebba-4afc-a742-2800428cb26c","responseBody":"{\"message\":\"Invalid token\"}","time":"04-10-2023 16:08:29","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"50f23e3f-541f-413a-b0a1-7b75659f4a48","time":"04-10-2023 16:08:30","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error running query GetUserProp sql: no rows in result set","time":"04-10-2023 16:08:30"}
+{"latency":"2.276ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"50f23e3f-541f-413a-b0a1-7b75659f4a48","responseBody":"{\"message\":\"Invalid token\"}","time":"04-10-2023 16:08:30","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"c274a81e-3a46-4f6e-8981-7a08af03ce16","time":"04-10-2023 16:08:33","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %vc274a81e-3a46-4f6e-8981-7a08af03ce16","time":"04-10-2023 16:08:33"}
+{"latency":"44.0233ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"c274a81e-3a46-4f6e-8981-7a08af03ce16","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY0OTY5MTMsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.uxkDoelJPusHjcrWWyFDjSnuOnKDjOHAAuEVAhZcJ5k\",\"roleCode\":\"user\"}}","time":"04-10-2023 16:08:33","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"abb88984-b577-42b2-befd-83b02140ee7f","time":"04-10-2023 16:08:41","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.4635ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"abb88984-b577-42b2-befd-83b02140ee7f","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:08:41","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0ed6b00b-2852-4f02-bbee-14fc4c70acaa","time":"04-10-2023 16:09:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"583.6µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0ed6b00b-2852-4f02-bbee-14fc4c70acaa","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:09:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"04-10-2023 16:55:37"}
+{"level":"info","msg":"Closing User DB connection","time":"04-10-2023 16:55:37"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"04-10-2023 16:55:37"}
+{"level":"info","msg":"Setip Logger Finish","time":"04-10-2023 16:55:44"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"04-10-2023 16:55:44"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"04-10-2023 16:55:44"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"04-10-2023 16:55:44"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"5f770576-23ea-404d-b7d2-105d2460243a","time":"04-10-2023 16:55:47","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.4115ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"5f770576-23ea-404d-b7d2-105d2460243a","responseBody":"{\"message\":\"Invalid token\"}","time":"04-10-2023 16:55:47","url":"/v1.0/private/logout","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"417b274a-da4b-436f-9c85-aded45144c34","time":"04-10-2023 16:55:57","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v417b274a-da4b-436f-9c85-aded45144c34","time":"04-10-2023 16:55:57"}
+{"latency":"14.6711ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"417b274a-da4b-436f-9c85-aded45144c34","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY0OTk3NTcsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.TfunxgEPUg925hA2s6U6oSxS9dZxDF9wNPJye4bWur8\",\"roleCode\":\"user\"}}","time":"04-10-2023 16:55:57","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"3ca877eb-cfc0-4864-8fc5-295b5a2cfdab","time":"04-10-2023 16:56:08","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"715.9µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"3ca877eb-cfc0-4864-8fc5-295b5a2cfdab","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"04-10-2023 16:56:08","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 08:28:54"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 08:28:54"}
+{"level":"fatal","msg":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","time":"05-10-2023 08:28:56"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 08:30:02"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 08:30:02"}
+{"level":"fatal","msg":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","time":"05-10-2023 08:30:04"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 08:31:19"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 08:31:19"}
+{"level":"fatal","msg":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.","time":"05-10-2023 08:31:21"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 08:31:33"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 08:31:33"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 08:31:33"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 08:31:33"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"5ac27fc3-c829-4bd0-ba30-fad269daf4c6","time":"05-10-2023 08:31:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"643.9µs","level":"info","logType":"Response","method":"GET","msg":"","requestId":"5ac27fc3-c829-4bd0-ba30-fad269daf4c6","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"05-10-2023 08:31:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"35ad71bb-2f4d-47c7-8e33-da2c68e6a233","time":"05-10-2023 08:31:59","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v35ad71bb-2f4d-47c7-8e33-da2c68e6a233","time":"05-10-2023 08:31:59"}
+{"latency":"71.746ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"35ad71bb-2f4d-47c7-8e33-da2c68e6a233","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY1NTU5MTksImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.37aWI019zUsFzfKUIms6nFL13T5-YGnbHHQuJVFmiCM\",\"roleCode\":\"user\"}}","time":"05-10-2023 08:31:59","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"525f8c88-2a27-494f-94ac-a7c1ca056ef1","time":"05-10-2023 08:32:07","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"latency":"1.0726ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"525f8c88-2a27-494f-94ac-a7c1ca056ef1","responseBody":"{\"statusCode\":404,\"status\":\"reject\",\"message\":\"Undefined Process\",\"displayMessage\":\"warning.undefinedProcess\",\"response\":null}","time":"05-10-2023 08:32:07","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 08:37:40"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 08:37:40"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 08:37:40"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 08:37:46"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 08:37:46"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 08:37:46"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 08:37:46"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"a84075ee-29e2-4051-a5de-235cae00a41d","time":"05-10-2023 08:37:57","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %va84075ee-29e2-4051-a5de-235cae00a41d","time":"05-10-2023 08:37:57"}
+{"latency":"23.7227ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"a84075ee-29e2-4051-a5de-235cae00a41d","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY1NTYyNzcsImxldmVsIjoiYWRtaW4iLCJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiJ9.ZNRl4b5u0RhVwp1kPJznUU-H-lsIUPgHpDN99nUdj7k\",\"roleCode\":\"admin\"}}","time":"05-10-2023 08:37:57","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0b5a68e3-4c0b-488a-8717-57aa1bc17fb5","time":"05-10-2023 08:38:07","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v0b5a68e3-4c0b-488a-8717-57aa1bc17fb5","time":"05-10-2023 08:38:07"}
+{"latency":"11.9915ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0b5a68e3-4c0b-488a-8717-57aa1bc17fb5","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 08:38:07","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:03:13"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:03:13"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:03:13"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:04:06"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:04:06"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:04:06"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:04:06"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"e6eae7dc-f260-466a-9beb-b7725afa4f65","time":"05-10-2023 09:04:20","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %ve6eae7dc-f260-466a-9beb-b7725afa4f65","time":"05-10-2023 09:04:20"}
+{"latency":"2.4844ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"e6eae7dc-f260-466a-9beb-b7725afa4f65","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:20","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"f01f1b61-e04c-4174-8ff1-04f309ddb8ba","time":"05-10-2023 09:04:23","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vf01f1b61-e04c-4174-8ff1-04f309ddb8ba","time":"05-10-2023 09:04:23"}
+{"latency":"2.5358ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"f01f1b61-e04c-4174-8ff1-04f309ddb8ba","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:23","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"9ce0121d-0e59-49ee-9b19-e73f659026b6","time":"05-10-2023 09:04:24","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v9ce0121d-0e59-49ee-9b19-e73f659026b6","time":"05-10-2023 09:04:24"}
+{"latency":"4.2129ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"9ce0121d-0e59-49ee-9b19-e73f659026b6","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:24","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:04:41"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:04:41"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:04:41"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:04:46"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:04:46"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:04:46"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:04:46"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"d047190e-3bd0-4fdb-9ffe-21f11e420a1f","time":"05-10-2023 09:04:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vd047190e-3bd0-4fdb-9ffe-21f11e420a1f","time":"05-10-2023 09:04:51"}
+{"latency":"2.2481ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"d047190e-3bd0-4fdb-9ffe-21f11e420a1f","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"3e327e3e-9b91-4f19-9497-37bf5d5d118d","time":"05-10-2023 09:04:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v3e327e3e-9b91-4f19-9497-37bf5d5d118d","time":"05-10-2023 09:04:52"}
+{"latency":"3.2093ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"3e327e3e-9b91-4f19-9497-37bf5d5d118d","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"13e5a203-b997-46e2-8675-0d4f99f81e46","time":"05-10-2023 09:04:53","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v13e5a203-b997-46e2-8675-0d4f99f81e46","time":"05-10-2023 09:04:53"}
+{"latency":"2.0711ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"13e5a203-b997-46e2-8675-0d4f99f81e46","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:53","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"66107ef4-18ee-47c7-abc5-971513906f0d","time":"05-10-2023 09:04:54","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v66107ef4-18ee-47c7-abc5-971513906f0d","time":"05-10-2023 09:04:54"}
+{"latency":"1.6372ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"66107ef4-18ee-47c7-abc5-971513906f0d","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:04:54","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:05:24"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:05:24"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:05:24"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:05:30"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:05:30"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:05:30"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:05:30"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0f39ad40-d50e-4e24-abc4-d1fbecfb3fb7","time":"05-10-2023 09:05:32","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v0f39ad40-d50e-4e24-abc4-d1fbecfb3fb7","time":"05-10-2023 09:05:32"}
+{"latency":"1.938ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0f39ad40-d50e-4e24-abc4-d1fbecfb3fb7","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:05:32","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:07:39"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:07:39"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:07:39"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:07:44"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:07:44"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:07:44"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:07:44"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"7f0a16d8-1df8-42af-84b0-36e415aa7b78","time":"05-10-2023 09:07:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v7f0a16d8-1df8-42af-84b0-36e415aa7b78","time":"05-10-2023 09:07:47"}
+{"latency":"1.7166ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"7f0a16d8-1df8-42af-84b0-36e415aa7b78","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:07:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:08:42"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:08:42"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:08:42"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:08:48"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:08:48"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:08:48"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:08:48"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"e20ebd3c-e8b2-4939-9af3-dd7abcce1129","time":"05-10-2023 09:08:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %ve20ebd3c-e8b2-4939-9af3-dd7abcce1129","time":"05-10-2023 09:08:49"}
+{"latency":"2.7575ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"e20ebd3c-e8b2-4939-9af3-dd7abcce1129","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:08:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:09:27"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:09:27"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:09:27"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:09:32"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:09:32"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:09:32"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:09:32"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"35073cdd-8e16-4d94-8769-9ee92f8081d7","time":"05-10-2023 09:09:32","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v35073cdd-8e16-4d94-8769-9ee92f8081d7","time":"05-10-2023 09:09:32"}
+{"latency":"2.8932ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"35073cdd-8e16-4d94-8769-9ee92f8081d7","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:09:32","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"05-10-2023 09:09:45"}
+{"level":"info","msg":"Closing User DB connection","time":"05-10-2023 09:09:45"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"05-10-2023 09:09:45"}
+{"level":"info","msg":"Setip Logger Finish","time":"05-10-2023 09:09:50"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"05-10-2023 09:09:50"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"05-10-2023 09:09:50"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"05-10-2023 09:09:50"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"2b49f0dc-ebd4-4093-8e3c-b7b8de7c2cb5","time":"05-10-2023 09:09:55","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v2b49f0dc-ebd4-4093-8e3c-b7b8de7c2cb5","time":"05-10-2023 09:09:55"}
+{"latency":"3.0946ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"2b49f0dc-ebd4-4093-8e3c-b7b8de7c2cb5","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:09:55","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"92c27d71-66c4-401d-976a-589b210657aa","time":"05-10-2023 09:10:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v92c27d71-66c4-401d-976a-589b210657aa","time":"05-10-2023 09:10:05"}
+{"latency":"3.2721ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"92c27d71-66c4-401d-976a-589b210657aa","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"05-10-2023 09:10:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 08:50:36"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 08:50:36"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 08:50:36"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 08:50:36"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"85e3b941-9918-4f8f-bdb2-1c26f30f6740","time":"09-10-2023 08:50:44","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v85e3b941-9918-4f8f-bdb2-1c26f30f6740","time":"09-10-2023 08:50:44"}
+{"latency":"70.4636ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"85e3b941-9918-4f8f-bdb2-1c26f30f6740","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY5MDI2NDQsImxldmVsIjoiYWRtaW4iLCJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiJ9.BpXbwVyhpmU7Zvq7tyZrJUpKeyOPCK5VM4wifqax0SA\",\"roleCode\":\"admin\"}}","time":"09-10-2023 08:50:44","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"020cbe4e-159e-4286-beda-644e152d5ced","time":"09-10-2023 08:50:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v020cbe4e-159e-4286-beda-644e152d5ced","time":"09-10-2023 08:50:51"}
+{"latency":"8.0799ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"020cbe4e-159e-4286-beda-644e152d5ced","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 08:50:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 08:52:09"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 08:52:09"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 08:52:09"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 08:52:18"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 08:52:18"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 08:52:18"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 08:52:18"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"ad463eac-cfe5-4412-90e9-e7fdd30164b7","time":"09-10-2023 08:52:20","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"f066f076-8e2e-441c-a257-20d5c0a8b3c2","time":"09-10-2023 08:52:43","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"c1f5902e-876e-4a0c-aa70-449a772cac75","time":"09-10-2023 08:53:02","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error running query UpdateLastLogin :  Error 1205 (HY000): Lock wait timeout exceeded; try restarting transaction","time":"09-10-2023 08:53:34"}
+{"level":"error","msg":"[USER][LoginUser] ERROR Error 1205 (HY000): Lock wait timeout exceeded; try restarting transaction for requestId: f066f076-8e2e-441c-a257-20d5c0a8b3c2","time":"09-10-2023 08:53:34"}
+{"latency":"50.7459013s","level":"info","logType":"Response","method":"POST","msg":"","requestId":"f066f076-8e2e-441c-a257-20d5c0a8b3c2","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Invalid username or password\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 08:53:34","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 08:53:42"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 08:53:42"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 08:53:42"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 08:53:54"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 08:53:54"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 08:53:54"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 08:53:54"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"3f591234-c996-48d1-a641-54dc65ac0a99","time":"09-10-2023 08:54:36","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"Error running query UpdateLastLogin :  Error 1205 (HY000): Lock wait timeout exceeded; try restarting transaction","time":"09-10-2023 08:55:27"}
+{"level":"error","msg":"[USER][LoginUser] ERROR Error 1205 (HY000): Lock wait timeout exceeded; try restarting transaction for requestId: 3f591234-c996-48d1-a641-54dc65ac0a99","time":"09-10-2023 08:55:27"}
+{"latency":"51.5181635s","level":"info","logType":"Response","method":"POST","msg":"","requestId":"3f591234-c996-48d1-a641-54dc65ac0a99","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Invalid username or password\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 08:55:27","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"ff79365c-653a-44a0-a601-fd9509ebf0b2","time":"09-10-2023 08:57:07","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 08:57:24"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 08:57:24"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 08:57:24"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 08:58:18"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 08:58:18"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 08:58:18"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 08:58:18"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"2af12bfd-d4af-41e6-a2ea-a5419d7b3f69","time":"09-10-2023 08:58:22","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v2af12bfd-d4af-41e6-a2ea-a5419d7b3f69","time":"09-10-2023 08:58:22"}
+{"latency":"11.1009ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"2af12bfd-d4af-41e6-a2ea-a5419d7b3f69","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY5MDMxMDIsImxldmVsIjoiYWRtaW4iLCJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiJ9.5gYB9MSy91j8stizlG6BbFBVpPKDnUkDbm6kjYWgZ5Q\",\"roleCode\":\"admin\"}}","time":"09-10-2023 08:58:22","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"9831bc5d-c72a-4fa1-abb5-2f492416c7a7","time":"09-10-2023 08:58:30","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v9831bc5d-c72a-4fa1-abb5-2f492416c7a7","time":"09-10-2023 08:58:30"}
+{"latency":"2.9331ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"9831bc5d-c72a-4fa1-abb5-2f492416c7a7","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 08:58:30","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:07:35"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:07:35"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:07:35"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:07:40"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:07:40"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:07:40"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:07:40"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"8bd9b658-a17d-4193-b322-0f5f39b91d4e","time":"09-10-2023 09:07:45","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'name_incom' in 'field list' for requestId: 8bd9b658-a17d-4193-b322-0f5f39b91d4e","time":"09-10-2023 09:07:45"}
+{"latency":"1.972ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"8bd9b658-a17d-4193-b322-0f5f39b91d4e","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:07:45","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"2b6406f7-2da5-4513-aaf6-83f239fa5611","time":"09-10-2023 09:07:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'name_incom' in 'field list' for requestId: 2b6406f7-2da5-4513-aaf6-83f239fa5611","time":"09-10-2023 09:07:46"}
+{"latency":"2.3447ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"2b6406f7-2da5-4513-aaf6-83f239fa5611","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:07:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:07:53"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:07:53"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:07:53"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:08:29"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:08:29"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:08:29"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:08:29"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"7549e81c-5450-410a-ad38-c83254de3ab6","time":"09-10-2023 09:08:30","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v7549e81c-5450-410a-ad38-c83254de3ab6","time":"09-10-2023 09:08:30"}
+{"latency":"1.1155ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"7549e81c-5450-410a-ad38-c83254de3ab6","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:08:30","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"fc3beb83-ab69-49ef-b8c0-c5d6a3915462","time":"09-10-2023 09:11:00","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vfc3beb83-ab69-49ef-b8c0-c5d6a3915462","time":"09-10-2023 09:11:00"}
+{"latency":"1.8523ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"fc3beb83-ab69-49ef-b8c0-c5d6a3915462","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:11:00","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:26:41"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:26:41"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:26:41"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:26:46"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:26:46"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:26:46"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:26:46"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"b743eaa7-5a38-44b0-abe0-6400d7227900","time":"09-10-2023 09:26:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1146 (42S02): Table 'db_item.tbl_income' doesn't exist for requestId: b743eaa7-5a38-44b0-abe0-6400d7227900","time":"09-10-2023 09:26:46"}
+{"latency":"1.6949ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"b743eaa7-5a38-44b0-abe0-6400d7227900","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:26:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"d2a2b847-eb66-403c-8db6-5162b22a7499","time":"09-10-2023 09:26:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1146 (42S02): Table 'db_item.tbl_income' doesn't exist for requestId: d2a2b847-eb66-403c-8db6-5162b22a7499","time":"09-10-2023 09:26:47"}
+{"latency":"2.2275ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"d2a2b847-eb66-403c-8db6-5162b22a7499","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:26:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:30:04"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:30:04"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:30:04"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:30:10"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:30:10"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:30:10"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:30:10"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"19795a23-4c19-4e1f-9bab-cd75937a2e7a","time":"09-10-2023 09:30:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v19795a23-4c19-4e1f-9bab-cd75937a2e7a","time":"09-10-2023 09:30:10"}
+{"latency":"1.2412ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"19795a23-4c19-4e1f-9bab-cd75937a2e7a","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:30:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"326de6d0-b5c2-41f2-aacf-3894207c6a8e","time":"09-10-2023 09:30:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v326de6d0-b5c2-41f2-aacf-3894207c6a8e","time":"09-10-2023 09:30:10"}
+{"latency":"2.3746ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"326de6d0-b5c2-41f2-aacf-3894207c6a8e","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:30:10","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:30:41"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:30:41"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:30:41"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:30:52"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:30:52"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:30:52"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:30:52"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"09204e04-d117-448f-bbf5-937bd0daf36a","time":"09-10-2023 09:30:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v09204e04-d117-448f-bbf5-937bd0daf36a","time":"09-10-2023 09:30:56"}
+{"latency":"1.1522ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"09204e04-d117-448f-bbf5-937bd0daf36a","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:30:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"a9abf9f2-a74c-4dd9-b0c2-a6f89338edb4","time":"09-10-2023 09:30:57","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %va9abf9f2-a74c-4dd9-b0c2-a6f89338edb4","time":"09-10-2023 09:30:57"}
+{"latency":"1.2687ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"a9abf9f2-a74c-4dd9-b0c2-a6f89338edb4","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:30:57","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:31:22"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:31:22"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:31:22"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:31:28"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:31:28"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:31:28"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:31:28"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0394d6fe-b547-4240-8c43-3d32384e3055","time":"09-10-2023 09:31:29","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v0394d6fe-b547-4240-8c43-3d32384e3055","time":"09-10-2023 09:31:29"}
+{"latency":"1.7335ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0394d6fe-b547-4240-8c43-3d32384e3055","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:31:29","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"9b4e8ef7-603f-4d48-b754-f7bfee917782","time":"09-10-2023 09:31:36","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v9b4e8ef7-603f-4d48-b754-f7bfee917782","time":"09-10-2023 09:31:36"}
+{"latency":"5.6967ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"9b4e8ef7-603f-4d48-b754-f7bfee917782","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:31:36","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:31:56"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:31:56"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:31:56"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:32:02"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:32:02"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:32:02"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:32:02"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"6e495cf7-4a72-40dd-a549-8279c24bb284","time":"09-10-2023 09:32:03","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v6e495cf7-4a72-40dd-a549-8279c24bb284","time":"09-10-2023 09:32:03"}
+{"latency":"1.4807ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"6e495cf7-4a72-40dd-a549-8279c24bb284","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:32:03","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:33:08"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:33:08"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:33:08"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:37:40"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:37:40"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:37:40"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:37:40"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"6be4c25d-77c7-4129-be29-7fa21a347d44","time":"09-10-2023 09:37:43","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v6be4c25d-77c7-4129-be29-7fa21a347d44","time":"09-10-2023 09:37:43"}
+{"latency":"1.6482ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"6be4c25d-77c7-4129-be29-7fa21a347d44","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:37:43","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"28c4e39f-298e-4f7f-a744-ce0545f48da7","time":"09-10-2023 09:37:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v28c4e39f-298e-4f7f-a744-ce0545f48da7","time":"09-10-2023 09:37:47"}
+{"latency":"2.5782ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"28c4e39f-298e-4f7f-a744-ce0545f48da7","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:37:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:38:31"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:38:31"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:38:31"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:38:39"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:38:39"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:38:39"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:38:39"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"3493f56f-97ef-4062-b993-79b12eb1f68f","time":"09-10-2023 09:38:39","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v3493f56f-97ef-4062-b993-79b12eb1f68f","time":"09-10-2023 09:38:39"}
+{"latency":"1.7906ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"3493f56f-97ef-4062-b993-79b12eb1f68f","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:38:39","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:39:47"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:39:47"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:39:47"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:39:53"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:39:53"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:39:53"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:39:53"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"f7419dba-e432-4b0c-8a17-dce6d89d8d0a","time":"09-10-2023 09:39:53","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vf7419dba-e432-4b0c-8a17-dce6d89d8d0a","time":"09-10-2023 09:39:53"}
+{"latency":"2.2543ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"f7419dba-e432-4b0c-8a17-dce6d89d8d0a","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:39:53","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"212850b9-a9cb-402f-8da3-7ff15a980d62","time":"09-10-2023 09:39:54","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v212850b9-a9cb-402f-8da3-7ff15a980d62","time":"09-10-2023 09:39:54"}
+{"latency":"3.7664ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"212850b9-a9cb-402f-8da3-7ff15a980d62","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:39:54","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:40:41"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:40:41"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:40:41"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:40:47"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:40:47"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:40:47"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:40:47"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"80e895d3-68b0-48d8-8424-b7aeb1223e6f","time":"09-10-2023 09:40:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v80e895d3-68b0-48d8-8424-b7aeb1223e6f","time":"09-10-2023 09:40:47"}
+{"latency":"2.8454ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"80e895d3-68b0-48d8-8424-b7aeb1223e6f","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:40:47","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"f6b8ddbf-39ad-4932-b233-2fbdbdd5f7aa","time":"09-10-2023 09:40:50","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vf6b8ddbf-39ad-4932-b233-2fbdbdd5f7aa","time":"09-10-2023 09:40:50"}
+{"latency":"1.7052ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"f6b8ddbf-39ad-4932-b233-2fbdbdd5f7aa","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:40:50","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:44:45"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:44:45"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:44:45"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:44:50"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:44:50"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:44:50"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:44:50"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"4d874cdc-b171-44a7-bf33-c36e2c932914","time":"09-10-2023 09:44:55","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v4d874cdc-b171-44a7-bf33-c36e2c932914","time":"09-10-2023 09:44:55"}
+{"latency":"1.3176ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"4d874cdc-b171-44a7-bf33-c36e2c932914","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:44:55","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"854025cc-9745-433b-999a-08547b4e6836","time":"09-10-2023 09:44:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v854025cc-9745-433b-999a-08547b4e6836","time":"09-10-2023 09:44:56"}
+{"latency":"2.1078ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"854025cc-9745-433b-999a-08547b4e6836","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:44:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:46:49"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:46:49"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:46:49"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:46:55"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:46:55"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:46:55"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:46:55"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"3cc7c033-2c7e-473d-90a2-b2acd62b381f","time":"09-10-2023 09:46:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v3cc7c033-2c7e-473d-90a2-b2acd62b381f","time":"09-10-2023 09:46:56"}
+{"latency":"1.7172ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"3cc7c033-2c7e-473d-90a2-b2acd62b381f","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[{\"incomeDetail\":{\"id\":1,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}},{\"incomeDetail\":{\"id\":2,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}}]}","time":"09-10-2023 09:46:56","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:48:56"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:48:56"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:48:56"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:49:01"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:49:01"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:49:01"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:49:01"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"e7072496-1110-467b-ae1d-e94bf2846cad","time":"09-10-2023 09:49:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %ve7072496-1110-467b-ae1d-e94bf2846cad","time":"09-10-2023 09:49:01"}
+{"latency":"1.8438ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"e7072496-1110-467b-ae1d-e94bf2846cad","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[]}","time":"09-10-2023 09:49:01","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:50:08"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:50:08"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:50:08"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:50:14"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:50:14"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:50:14"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:50:14"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"6db30d3a-bc3b-48e5-9b7b-6cbca5488ca4","time":"09-10-2023 09:50:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v6db30d3a-bc3b-48e5-9b7b-6cbca5488ca4","time":"09-10-2023 09:50:19"}
+{"latency":"1.5885ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"6db30d3a-bc3b-48e5-9b7b-6cbca5488ca4","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[{\"incomeDetail\":{\"id\":1,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"0001-01-01T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}},{\"incomeDetail\":{\"id\":2,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"2022-12-12T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}}]}","time":"09-10-2023 09:50:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:50:51"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:50:51"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:50:51"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 09:57:44"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 09:57:44"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 09:57:44"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 09:57:44"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"3116e06e-b0ff-4359-9d20-07e01d5908e6","time":"09-10-2023 09:57:45","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v3116e06e-b0ff-4359-9d20-07e01d5908e6","time":"09-10-2023 09:57:45"}
+{"latency":"1.6411ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"3116e06e-b0ff-4359-9d20-07e01d5908e6","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":[{\"incomeDetail\":{\"id\":1,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"0001-01-01T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}},{\"incomeDetail\":{\"id\":2,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"2022-12-12T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},\"expensesDetail\":{\"id\":0,\"nameExpenses\":\"\",\"typeExpenses\":\"\",\"date\":\"0001-01-01T00:00:00Z\",\"totalExpenses\":0,\"descExpenses\":\"\"}}]}","time":"09-10-2023 09:57:45","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"4834e5c6-a250-468d-934a-1a339516e0dd","time":"09-10-2023 09:57:56","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v4834e5c6-a250-468d-934a-1a339516e0dd","time":"09-10-2023 09:57:57"}
+{"latency":"32.6014ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"4834e5c6-a250-468d-934a-1a339516e0dd","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY5MDY2NzYsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.5u8oUSR4OhKXCm3l4GO-LkB8eGoFqe3M2IW3c6C7HJc\",\"roleCode\":\"user\"}}","time":"09-10-2023 09:57:57","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"91fd4397-5840-4867-aceb-f4981bd9b6d7","time":"09-10-2023 09:58:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v91fd4397-5840-4867-aceb-f4981bd9b6d7","time":"09-10-2023 09:58:05"}
+{"latency":"6.4827ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"91fd4397-5840-4867-aceb-f4981bd9b6d7","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:58:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"59fd8164-9d01-4a74-aa23-1ab2129cedd4","time":"09-10-2023 09:58:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v59fd8164-9d01-4a74-aa23-1ab2129cedd4","time":"09-10-2023 09:58:05"}
+{"latency":"3.7692ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"59fd8164-9d01-4a74-aa23-1ab2129cedd4","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 09:58:05","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 09:58:07"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 09:58:07"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 09:58:07"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:34:08"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:34:08"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:34:08"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:34:08"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"lisa\",    \"password\" : \"lisa\"}","requestId":"e3facd97-ef7d-4968-bb23-9cd63ad82ca6","time":"09-10-2023 10:34:11","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %ve3facd97-ef7d-4968-bb23-9cd63ad82ca6","time":"09-10-2023 10:34:11"}
+{"latency":"17.7079ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"e3facd97-ef7d-4968-bb23-9cd63ad82ca6","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY5MDg4NTEsImxldmVsIjoidXNlciIsInVpZCI6IjMiLCJ1c2VybmFtZSI6Imxpc2EifQ.WSJ4WkPewHYLF5Q5SnVK-uHMOzLZ-GGubQH-WmBhZdY\",\"roleCode\":\"user\"}}","time":"09-10-2023 10:34:11","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"2873a0fb-abf6-480c-8889-e50a0f9fa0cd","time":"09-10-2023 10:34:18","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'user_id' in 'where clause' for requestId: 2873a0fb-abf6-480c-8889-e50a0f9fa0cd","time":"09-10-2023 10:34:18"}
+{"latency":"5.0481ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"2873a0fb-abf6-480c-8889-e50a0f9fa0cd","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:34:18","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"f01cfab5-9f4b-4906-aca6-ecd5c1ae779d","time":"09-10-2023 10:34:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'user_id' in 'where clause' for requestId: f01cfab5-9f4b-4906-aca6-ecd5c1ae779d","time":"09-10-2023 10:34:19"}
+{"latency":"2.8512ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"f01cfab5-9f4b-4906-aca6-ecd5c1ae779d","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:34:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 10:36:41"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 10:36:41"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 10:36:41"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:36:46"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:36:46"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:36:46"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:36:46"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"fe1d61c6-50f3-4770-9ae1-b9a3f7249af5","time":"09-10-2023 10:36:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'user_id' in 'where clause' for requestId: fe1d61c6-50f3-4770-9ae1-b9a3f7249af5","time":"09-10-2023 10:36:49"}
+{"latency":"2.4776ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"fe1d61c6-50f3-4770-9ae1-b9a3f7249af5","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:36:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"ccbf72ad-b60c-4c87-8f6f-f67dc4673e72","time":"09-10-2023 10:36:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow] ERROR Error 1054 (42S22): Unknown column 'user_id' in 'where clause' for requestId: ccbf72ad-b60c-4c87-8f6f-f67dc4673e72","time":"09-10-2023 10:36:49"}
+{"latency":"1.2985ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"ccbf72ad-b60c-4c87-8f6f-f67dc4673e72","responseBody":"{\"respCode\":\"100\",\"respMessage\":\"Bad Request\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:36:49","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"de17eb80-39a2-4ac5-8688-0b4aa30cb866","time":"09-10-2023 10:37:35","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vde17eb80-39a2-4ac5-8688-0b4aa30cb866","time":"09-10-2023 10:37:35"}
+{"latency":"3.6961ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"de17eb80-39a2-4ac5-8688-0b4aa30cb866","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:37:35","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"5ccb1081-a3f6-4fb1-a7a8-f37dda50b30d","time":"09-10-2023 10:37:36","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v5ccb1081-a3f6-4fb1-a7a8-f37dda50b30d","time":"09-10-2023 10:37:36"}
+{"latency":"3.6381ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"5ccb1081-a3f6-4fb1-a7a8-f37dda50b30d","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:37:36","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"b28927b8-9f64-4960-8222-99830b649242","time":"09-10-2023 10:37:37","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vb28927b8-9f64-4960-8222-99830b649242","time":"09-10-2023 10:37:37"}
+{"latency":"2.3605ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"b28927b8-9f64-4960-8222-99830b649242","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:37:37","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 10:38:03"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 10:38:03"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 10:38:03"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:38:16"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:38:16"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:38:16"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:38:16"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"22287c21-3901-412e-af8b-4504d46089e2","time":"09-10-2023 10:38:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v22287c21-3901-412e-af8b-4504d46089e2","time":"09-10-2023 10:38:17"}
+{"latency":"3.0675ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"22287c21-3901-412e-af8b-4504d46089e2","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:38:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"0fd9afc7-22c8-462e-a56d-eac1ae50c51d","time":"09-10-2023 10:38:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v0fd9afc7-22c8-462e-a56d-eac1ae50c51d","time":"09-10-2023 10:38:17"}
+{"latency":"2.9681ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"0fd9afc7-22c8-462e-a56d-eac1ae50c51d","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:38:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 10:38:46"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 10:38:46"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 10:38:46"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:38:51"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:38:51"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:38:51"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:38:51"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"868cae7e-5fdb-4a12-aa1e-ffb9a8971234","time":"09-10-2023 10:38:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v868cae7e-5fdb-4a12-aa1e-ffb9a8971234","time":"09-10-2023 10:38:51"}
+{"latency":"3.8846ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"868cae7e-5fdb-4a12-aa1e-ffb9a8971234","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:38:51","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"7790c1f8-6010-4825-9179-2dccee62bcba","time":"09-10-2023 10:38:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v7790c1f8-6010-4825-9179-2dccee62bcba","time":"09-10-2023 10:38:52"}
+{"latency":"3.3305ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"7790c1f8-6010-4825-9179-2dccee62bcba","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:38:52","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 10:39:06"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 10:39:06"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 10:39:06"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:39:12"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:39:12"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:39:12"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:39:12"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"f518c6a9-f8e1-4e1f-ae5f-39a2789375c0","time":"09-10-2023 10:39:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vf518c6a9-f8e1-4e1f-ae5f-39a2789375c0","time":"09-10-2023 10:39:17"}
+{"latency":"3.8082ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"f518c6a9-f8e1-4e1f-ae5f-39a2789375c0","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:39:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"15d2d959-4930-4363-84da-1cc1e2804c1c","time":"09-10-2023 10:39:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v15d2d959-4930-4363-84da-1cc1e2804c1c","time":"09-10-2023 10:39:17"}
+{"latency":"3.8594ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"15d2d959-4930-4363-84da-1cc1e2804c1c","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:39:17","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 10:39:35"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 10:39:35"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 10:39:35"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 10:40:32"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 10:40:32"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 10:40:32"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 10:40:32"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"b3190c89-3088-4f07-b5aa-b41d62333a7c","time":"09-10-2023 10:40:33","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vb3190c89-3088-4f07-b5aa-b41d62333a7c","time":"09-10-2023 10:40:33"}
+{"latency":"2.0815ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"b3190c89-3088-4f07-b5aa-b41d62333a7c","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 10:40:33","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"983d11e0-b6af-44a2-8788-7074a68c3b53","time":"09-10-2023 11:07:23","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v983d11e0-b6af-44a2-8788-7074a68c3b53","time":"09-10-2023 11:07:23"}
+{"latency":"4.54ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"983d11e0-b6af-44a2-8788-7074a68c3b53","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 11:07:23","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 11:07:23"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 11:07:23"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 11:07:23"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 11:07:23"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"66e12ad6-0617-4c9b-af50-826ae68020bc","time":"09-10-2023 11:07:24","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v66e12ad6-0617-4c9b-af50-826ae68020bc","time":"09-10-2023 11:07:24"}
+{"latency":"4.8802ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"66e12ad6-0617-4c9b-af50-826ae68020bc","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 11:07:24","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"05e78064-8474-4149-b6ce-a6eb72ef9cb9","time":"09-10-2023 11:07:25","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v05e78064-8474-4149-b6ce-a6eb72ef9cb9","time":"09-10-2023 11:07:25"}
+{"latency":"6.5042ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"05e78064-8474-4149-b6ce-a6eb72ef9cb9","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 11:07:25","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"POST","msg":"","requestBody":"{    \"username\" : \"admin\",    \"password\" : \"admin\"}","requestId":"3aa61194-6a0c-4f5b-99ae-e6081a6f19ac","time":"09-10-2023 11:07:41","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[USER][LoginUser]SUCCESS for requestid: %v3aa61194-6a0c-4f5b-99ae-e6081a6f19ac","time":"09-10-2023 11:07:41"}
+{"latency":"17.0405ms","level":"info","logType":"Response","method":"POST","msg":"","requestId":"3aa61194-6a0c-4f5b-99ae-e6081a6f19ac","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY5MTA4NjEsImxldmVsIjoiYWRtaW4iLCJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiJ9.3sOi3fpeMbDfMIe1UuElXD6RYVZL1vfV8rSfHGOPpFA\",\"roleCode\":\"admin\"}}","time":"09-10-2023 11:07:41","url":"/v1.0/public/login/5","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"da8376b4-db73-4a1a-8990-f94e373bd836","time":"09-10-2023 11:07:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %vda8376b4-db73-4a1a-8990-f94e373bd836","time":"09-10-2023 11:07:46"}
+{"latency":"6.946ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"da8376b4-db73-4a1a-8990-f94e373bd836","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":null}","time":"09-10-2023 11:07:46","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 11:08:00"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 11:08:00"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 11:08:00"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 11:08:00"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 11:08:08"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 11:08:08"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 11:08:08"}
+{"level":"info","msg":"Setip Logger Finish","time":"09-10-2023 11:08:14"}
+{"level":"info","msg":"start init DB Item \u003cnil\u003e","time":"09-10-2023 11:08:14"}
+{"level":"info","msg":"start init DB User \u003cnil\u003e","time":"09-10-2023 11:08:14"}
+{"level":"info","msg":"start init DB Cash Flow \u003cnil\u003e","time":"09-10-2023 11:08:14"}
+{"level":"info","logType":"Request","method":"GET","msg":"","requestId":"64ac93ee-17aa-45d3-8ed8-4dd9252027c8","time":"09-10-2023 11:08:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"error","msg":"[CASHFLOW][GetCashFlow]SUCCESS for requestid: %v64ac93ee-17aa-45d3-8ed8-4dd9252027c8","time":"09-10-2023 11:08:19"}
+{"latency":"1.7293ms","level":"info","logType":"Response","method":"GET","msg":"","requestId":"64ac93ee-17aa-45d3-8ed8-4dd9252027c8","responseBody":"{\"respCode\":\"200\",\"respMessage\":\"Success\",\"idMessage\":\"\",\"response\":{\"incomeDetail\":[{\"id\":1,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"0001-01-01T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"},{\"id\":2,\"nameIncome\":\"tes\",\"typeIncome\":\"tes\",\"date\":\"2022-12-12T00:00:00Z\",\"totalIncome\":12000,\"descIncome\":\"test aja\"}],\"expensesDetail\":[]}}","time":"09-10-2023 11:08:19","url":"/v1.0/private/cash-flow","userAgent":"PostmanRuntime/7.33.0"}
+{"level":"info","msg":"Closing Item DB connection","time":"09-10-2023 11:08:31"}
+{"level":"info","msg":"Closing User DB connection","time":"09-10-2023 11:08:31"}
+{"level":"info","msg":"Closing Cash Flow DB connection","time":"09-10-2023 11:08:31"}
